@@ -72,7 +72,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-image: url(../images/forheader.jpg);
   background-color: black;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ header .navdiv {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1250px;
   width: 100%;
 }
 header .navdiv ul {
@@ -132,7 +132,7 @@ header .iconsdiv .fa-bars {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 670px;
+  height: 650px;
   background-image: url("../images/forsec-1.jpg");
   background-position: center;
   background-size: cover;
@@ -159,9 +159,9 @@ header .iconsdiv .fa-bars {
   color: white;
 }
 .sec-1 .maindiv input {
-  max-width: 270px;
+  max-width: 250px;
   width: 100%;
-  height: 50px;
+  height: 100px;
   border-radius: 211px;
   background: var(--main-red, #DD2242);
   color: white;
@@ -173,7 +173,7 @@ header .iconsdiv .fa-bars {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: 42%;
+  margin-left: 40%;
   width: 910px;
   height: 200px;
   -ms-flex-wrap: wrap;
