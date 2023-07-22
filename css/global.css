@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,13 +65,50 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+  background-image: url(../images/forheader.jpg);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .navdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1300px;
+  max-width: 1200px;
   width: 100%;
-  height: 80px;
-  padding-top: 48px;
+}
+header .navdiv ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+}
+header .navdiv ul a {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 45px;
+}
+header .navdiv ul a:hover {
+  color: #DD2242;
 }
 header .iconsdiv {
   display: -webkit-box;
@@ -86,43 +122,18 @@ header .iconsdiv {
 header .iconsdiv .fa-bars {
   display: none;
 }
-header .navdiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 500px;
-  width: 100%;
-  height: 30px;
-  border: none;
-  background: none;
-}
-header .navdiv li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-header .navdiv li a {
-  color: white;
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  margin-right: 45px;
-}
-header .navdiv li a:hover {
-  color: rgb(153, 88, 88);
-}
 
 .sec-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 700px;
-  background-image: url("../images/schoolphoto_deblurred.jpg");
+  height: 670px;
+  background-image: url("../images/forsec-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,16 +142,15 @@ header .navdiv li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*აქ ავირიე იმის გამო რომ ჰედერი და პირველი სექცია ერთად მაქვს და მერჯინებით მომიწია ჩაწერა*/
   max-width: 600px;
-  margin-top: 200px;
-  margin-right: 700px;
   width: 100%;
+  height: 60%;
+  margin-left: 8%;
+  margin-top: 4%;
 }
 .sec-1 .maindiv h1 {
   font-style: "Roboto" sans-serif;
@@ -154,4 +164,51 @@ header .navdiv li a:hover {
   height: 50px;
   border-radius: 211px;
   background: var(--main-red, #DD2242);
+  color: white;
+}
+.sec-1 .videodiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 42%;
+  width: 910px;
+  height: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.sec-1 .videodiv .vidinfodiv {
+  border: 1px solid #000;
+  opacity: 0.6000000238;
+  background: #000;
+  width: 200px;
+  height: 150px;
+}
+.sec-1 .videodiv .vidinfodiv h1 {
+  color: white;
+  font-size: 24px;
+  font-family: "Roboto" sans-serif;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+.sec-1 .videodiv .vidinfodiv h2 {
+  margin-top: 25%;
+  margin-left: 25%;
+  color: #DD2242;
+  font-family: Roboto;
+  font-size: 16px;
+}
+.sec-1 .videodiv .viddiv {
+  width: 300px;
+  height: 200px;
+}
+.sec-1 .videodiv .viddiv video {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=global.css.map */
