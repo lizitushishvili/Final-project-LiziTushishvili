@@ -161,7 +161,7 @@ header .iconsdiv .fa-bars {
 .sec-1 .maindiv input {
   max-width: 250px;
   width: 100%;
-  height: 100px;
+  height: 130px;
   border-radius: 211px;
   background: var(--main-red, #DD2242);
   color: white;
@@ -211,4 +211,280 @@ header .iconsdiv .fa-bars {
 .sec-1 .videodiv .viddiv video {
   width: 100%;
   height: 100%;
+}
+
+.sec-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 770px;
+  background-image: url("../images/pic.jpg");
+  /*background: linear-gradient(320deg, #4b5356 0%, rgba(87, 92, 98, 0.579) 100%) opacify($color: #49494900, $amount: 0.6);*/
+  /* background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec-2 .blogdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1120px;
+  width: 100%;
+}
+.sec-2 .blogdiv .photodiv {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.sec-2 .blogdiv .infodiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 285px;
+  max-width: 400px;
+  width: 100%;
+  vertical-align: middle;
+}
+.sec-2 .blogdiv .infodiv h1 {
+  color: var(--white, #FFF);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans" sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+.sec-2 .blogdiv .infodiv p {
+  color: var(--text-lighten, #E0E0E0);
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.18px;
+}
+.sec-2 .blogdiv .infodiv input {
+  /*@include button;*/
+  max-width: 250px;
+  width: 100%;
+  height: 50px;
+  border-radius: 211px;
+  background: var(--main-red, #DD2242);
+  color: white;
+}
+
+.sec-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 770px;
+  background-image: url("../images/forsec-1.jpg");
+  /*background: linear-gradient(320deg, #4b5356 0%, rgba(87, 92, 98, 0.579) 100%) opacify($color: #49494900, $amount: 0.6);*/
+  /* background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec-3 .blogdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1120px;
+  width: 100%;
+}
+.sec-3 .blogdiv .photodiv {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.sec-3 .blogdiv .infodiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 285px;
+  max-width: 400px;
+  width: 100%;
+  vertical-align: middle;
+}
+.sec-3 .blogdiv .infodiv h1 {
+  color: var(--white, #FFF);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans" sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+.sec-3 .blogdiv .infodiv p {
+  color: var(--text-lighten, #E0E0E0);
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.18px;
+}
+.sec-3 .blogdiv .infodiv input {
+  /*@include button;*/
+  max-width: 250px;
+  width: 100%;
+  height: 50px;
+  border-radius: 211px;
+  background: var(--main-red, #DD2242);
+  color: white;
+}
+
+.sec-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*background-image: url("../images/darkversion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  background-color: black;
+}
+.sec-4 .divclass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+.sec-4 .divclass .introdiv {
+  max-width: 500px;
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 50px;
+}
+.sec-4 .divclass .introdiv h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "DM Sans" sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.sec-4 .divclass .introdiv p {
+  color: var(--text-lighten, #E0E0E0);
+  text-align: center;
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  /* Paragraph Light */
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.5px;
+}
+.sec-4 .divclass .numberclass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sec-4 .divclass .numberclass .numberdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+}
+.sec-4 .divclass .numberclass .numberdiv h2 {
+  color: #DD2242;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "DM Sans" sans-serif;
+}
+.sec-4 .divclass .numberclass .numberdiv p {
+  color: var(--text-lighten, #E0E0E0);
+  text-align: center;
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  /* Paragraph Light */
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.5px;
 }/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,77 @@
+.sec-4{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    /*background-image: url("../images/darkversion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    background-color: black;
+    .divclass{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+        width: 100%;
+        .introdiv{
+            max-width: 500px;
+            width: 100%;
+            max-height: 200px;
+            margin-bottom: 50px;
+            h1{
+                color: #FFF;
+                text-align: center;
+                font-family: "DM Sans" sans-serif;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+            }
+            p{
+                color: var(--text-lighten, #E0E0E0);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                /* Paragraph Light */
+                font-family: "DM Sans" sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 155.556% */
+                letter-spacing: 0.5px;
+            }
+        }
+        .numberclass{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            justify-content: space-between;
+            .numberdiv{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 180px;
+                h2{
+                    color: #DD2242;
+                    font-size: 42px;
+                    font-weight: 700;
+                    font-family: "DM Sans" sans-serif;
+                }
+                p{
+                    color: var(--text-lighten, #E0E0E0);
+                    text-align: center;
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    /* Paragraph Light */
+                    font-family: "DM Sans" sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 155.556% */
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
