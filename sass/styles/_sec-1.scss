@@ -2,17 +2,15 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 650px;
+    height: 90vh;
     background-image: url("../images/forsec-1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include backgroundproperties;
     .maindiv{
         display: flex;
         flex-direction: column;   
         max-width: 600px;
         width: 100%;
-        height: 60%;
+        height: 65%;
         margin-left: 8%;
         margin-top: 4%;
         h1{
@@ -22,20 +20,17 @@
             color: white;
         }
         input {
-            max-width: 250px;
-            width: 100%;
-            height: 130px;
-            border-radius: 211px;
+            @include button;
             background: var(--main-red, #DD2242);
             color: white;
         }
     }
     .videodiv{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         margin-left: 40%;
         width: 910px;
-        height: 200px;
+        height: 270px;
         flex-wrap: wrap;
         flex-direction: row;
         .vidinfodiv{
@@ -55,13 +50,13 @@
                 margin-top: 25%;
                 margin-left: 25%;
                 color: #DD2242;
-                font-family: Roboto;
+                font-family: "Roboto" sans-serif;
                 font-size: 16px;
             }
         }
         .viddiv{
-            width: 300px;
-            height: 200px;
+            width: 250px;
+            height: 150px;
             video{
                 width: 100%;
                 height: 100%;

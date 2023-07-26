@@ -5,11 +5,7 @@
     width: 100%;
     height: 770px;
     background-image: url("../images/forsec-1.jpg");
-    /*background: linear-gradient(320deg, #4b5356 0%, rgba(87, 92, 98, 0.579) 100%) opacify($color: #49494900, $amount: 0.6);*/
-   /* background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%);*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include backgroundproperties;
     .blogdiv{
         display: flex;
         flex-direction: row;
@@ -49,11 +45,7 @@
                 letter-spacing: 0.18px;
             }
             input{
-                /*@include button;*/
-                max-width: 250px;
-                width: 100%;
-                height: 50px;
-                border-radius: 211px;
+                @include button;
                 background: var(--main-red, #DD2242);
                 color: white;
             }
