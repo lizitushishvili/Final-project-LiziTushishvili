@@ -24,6 +24,10 @@
             background: var(--main-red, #DD2242);
             color: white;
         }
+        
+        input:hover{
+            background-color: $hoveredbuttoncolor ;
+        }
     }
     .videodiv{
         display: flex;

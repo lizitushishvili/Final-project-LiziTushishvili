@@ -169,6 +169,9 @@ header .iconsdiv .fa-bars {
   background: var(--main-red, #DD2242);
   color: white;
 }
+.sec-1 .maindiv input:hover {
+  background-color: #ad233a;
+}
 .sec-1 .videodiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,7 +231,7 @@ header .iconsdiv .fa-bars {
           justify-content: center;
   width: 100%;
   height: 770px;
-  background-image: url("../images/pic.jpg");
+  background-image: url("../images/sec-2photo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,12 +247,13 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1120px;
+  max-width: 1000px;
   width: 100%;
 }
 .sec-2 .blogdiv .photodiv {
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
+  height: 500px;
   border-radius: 10px;
   vertical-align: middle;
 }
@@ -264,7 +268,7 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 285px;
+  height: 450px;
   max-width: 400px;
   width: 100%;
   vertical-align: middle;
@@ -299,6 +303,9 @@ header .iconsdiv .fa-bars {
   background: var(--main-red, #DD2242);
   color: white;
 }
+.sec-2 .blogdiv .infodiv input:hover {
+  background-color: #ad233a;
+}
 
 .sec-3 {
   display: -webkit-box;
@@ -312,7 +319,7 @@ header .iconsdiv .fa-bars {
           justify-content: center;
   width: 100%;
   height: 770px;
-  background-image: url("../images/forsec-1.jpg");
+  background-image: url("../images/backgroundsec-3_deblurred (1).jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -334,7 +341,7 @@ header .iconsdiv .fa-bars {
 .sec-3 .blogdiv .photodiv {
   max-width: 600px;
   width: 100%;
-  border-radius: 10px;
+  height: 400px;
   vertical-align: middle;
 }
 .sec-3 .blogdiv .infodiv {
@@ -348,7 +355,7 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 285px;
+  height: 450px;
   max-width: 400px;
   width: 100%;
   vertical-align: middle;
@@ -382,6 +389,9 @@ header .iconsdiv .fa-bars {
   border: none;
   background: var(--main-red, #DD2242);
   color: white;
+}
+.sec-3 .blogdiv .infodiv input:hover {
+  background-color: #ad233a;
 }
 
 .sec-4 {
@@ -490,5 +500,167 @@ header .iconsdiv .fa-bars {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.sec-5 {
+  height: 100vh;
+  max-width: 1550px;
+  width: 100%;
+  background-color: #DCE8F2;
+}
+.sec-5 h1 {
+  color: #010A20;
+  font-family: "DM Sans" sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.sec-5 .forpositiondiv {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sec-5 .forpositiondiv .foronerow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.sec-5 .forpositiondiv .foronerow .circlediv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #DD2242;
+  color: white;
+  border-radius: 50%;
+}
+.sec-5 .forpositiondiv .foronerow .infodiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  height: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sec-5 .forpositiondiv .foronerow .infodiv h2 {
+  color: var(--blue-background, #010A20);
+  font-family: "DM Sans" sans-serif;
+  font-size: 26.409px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+.sec-5 .forpositiondiv .foronerow .infodiv p {
+  color: var(--light-text, rgba(21, 20, 57, 0.4));
+  font-family: "DM Sans" sans-serif;
+  font-size: 23.475px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.146px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  background-color: var(--blue-background, #010A20);
+}
+footer .positiondiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px;
+  margin-left: 130px;
+  max-width: 1200px;
+  width: 100%;
+  height: 65px;
+}
+footer .positiondiv h2 {
+  color: var(--main-white, #FFF);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+}
+footer .positiondiv .forrightobjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 650px;
+  width: 100%;
+}
+footer .positiondiv .forrightobjects .footernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .positiondiv .forrightobjects .footernav a {
+  color: var(--main-white, #FFF);
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 155.556% */
   letter-spacing: 0.5px;
 }/*# sourceMappingURL=global.css.map */

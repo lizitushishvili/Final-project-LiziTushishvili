@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100%;
     height: 770px;
-    background-image: url("../images/forsec-1.jpg");
+    background-image: url("../images/backgroundsec-3_deblurred\ \(1\).jpg");
     @include backgroundproperties;
     .blogdiv{
         display: flex;
@@ -15,17 +15,11 @@
         .photodiv{
             max-width: 600px;
             width: 100%;
-            border-radius: 10px;
+            height: 400px;
             vertical-align: middle;
         }
         .infodiv{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 285px;
-            max-width: 400px;
-            width: 100%;
-            vertical-align: middle;
+            @include sectionsinfo;
             h1{
                 color: var(--white, #FFF);
                 font-feature-settings: 'clig' off, 'liga' off;
@@ -48,6 +42,9 @@
                 @include button;
                 background: var(--main-red, #DD2242);
                 color: white;
+            }
+            input:hover{
+                background-color: $hoveredbuttoncolor ;
             }
         }
     }

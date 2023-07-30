@@ -12,3 +12,22 @@
         background-size: cover;
         background-repeat: no-repeat;
 }
+@mixin footertextsettings{
+        color: var(--main-white, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: "DM Sans" sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 155.556% */
+        letter-spacing: 0.5px;
+}
+@mixin sectionsinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 450px;
+        max-width: 400px;
+        width: 100%;
+        vertical-align: middle;
+}
