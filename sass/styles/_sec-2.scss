@@ -6,6 +6,7 @@
     height: 770px;
     background-image: url("../images/sec-2photo.jpg");
     @include backgroundproperties;
+    
     .blogdiv{
         display: flex;
         flex-direction: row;

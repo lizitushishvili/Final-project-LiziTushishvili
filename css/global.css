@@ -79,6 +79,21 @@ header {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 1510px) {
+  header {
+    width: 120%;
+  }
+}
+@media (max-width: 1260px) {
+  header {
+    width: 140%;
+  }
+}
+@media (max-width: 1080px) {
+  header {
+    width: 150%;
+  }
+}
 header .navdiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,7 +520,6 @@ header .iconsdiv .fa-bars {
 
 .sec-5 {
   height: 100vh;
-  max-width: 1550px;
   width: 100%;
   background-color: #DCE8F2;
 }
