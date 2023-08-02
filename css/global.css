@@ -62,16 +62,6 @@ a {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
   height: 80px;
   background-image: url(../images/forheader.jpg);
   background-color: black;
@@ -79,20 +69,20 @@ header {
   background-position: center;
   background-size: cover;
 }
-@media (max-width: 1510px) {
-  header {
-    width: 120%;
-  }
-}
-@media (max-width: 1260px) {
-  header {
-    width: 140%;
-  }
-}
-@media (max-width: 1080px) {
-  header {
-    width: 150%;
-  }
+header .container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .navdiv {
   display: -webkit-box;
@@ -101,7 +91,6 @@ header .navdiv {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1250px;
   width: 100%;
 }
 header .navdiv ul {
@@ -113,6 +102,7 @@ header .navdiv ul {
           justify-content: space-between;
   max-width: 600px;
   width: 100%;
+  gap: 45px;
 }
 header .navdiv ul a {
   color: white;
@@ -120,10 +110,9 @@ header .navdiv ul a {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  margin-right: 45px;
 }
 header .navdiv ul a:hover {
-  color: #DD2242;
+  color: #dd2242;
 }
 header .iconsdiv {
   display: -webkit-box;
@@ -132,7 +121,6 @@ header .iconsdiv {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100px;
 }
 header .iconsdiv .fa-bars {
   display: none;
@@ -147,7 +135,7 @@ header .iconsdiv .fa-bars {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 90vh;
+  height: 110vh;
   background-image: url("../images/forsec-1.jpg");
   background-position: center;
   background-size: cover;
@@ -181,11 +169,23 @@ header .iconsdiv .fa-bars {
   background: var(--main-red, #DD2242);
   color: white;
   border: none;
-  background: var(--main-red, #DD2242);
+  background: var(--main-red, #dd2242);
   color: white;
 }
 .sec-1 .maindiv input:hover {
   background-color: #ad233a;
+}
+.sec-1 .videodivparent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 200px;
 }
 .sec-1 .videodiv {
   display: -webkit-box;
@@ -194,15 +194,15 @@ header .iconsdiv .fa-bars {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 40%;
   width: 910px;
-  height: 270px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  opacity: 0.6000000238;
+  background: #000;
 }
 .sec-1 .videodiv .vidinfodiv {
   border: 1px solid #000;
@@ -221,7 +221,7 @@ header .iconsdiv .fa-bars {
 .sec-1 .videodiv .vidinfodiv h2 {
   margin-top: 25%;
   margin-left: 25%;
-  color: #DD2242;
+  color: #dd2242;
   font-family: "Roboto" sans-serif;
   font-size: 16px;
 }
@@ -332,12 +332,16 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   height: 770px;
   background-image: url("../images/backgroundsec-3_deblurred (1).jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.sec-3 .container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
 }
 .sec-3 .blogdiv {
   display: -webkit-box;
@@ -350,14 +354,27 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1120px;
-  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+}
+@media (max-width: 1166px) {
+  .sec-3 .blogdiv {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .sec-3 .blogdiv .photodiv {
   max-width: 600px;
   width: 100%;
   height: 400px;
   vertical-align: middle;
+}
+.sec-3 .blogdiv .photodiv img {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
 }
 .sec-3 .blogdiv .infodiv {
   display: -webkit-box;
@@ -376,7 +393,7 @@ header .iconsdiv .fa-bars {
   vertical-align: middle;
 }
 .sec-3 .blogdiv .infodiv h1 {
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   -webkit-font-feature-settings: "clig" off, "liga" off;
           font-feature-settings: "clig" off, "liga" off;
   font-family: "DM Sans" sans-serif;
@@ -386,7 +403,7 @@ header .iconsdiv .fa-bars {
   line-height: 50px;
 }
 .sec-3 .blogdiv .infodiv p {
-  color: var(--text-lighten, #E0E0E0);
+  color: var(--text-lighten, #e0e0e0);
   font-family: "DM Sans" sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -402,7 +419,7 @@ header .iconsdiv .fa-bars {
   background: var(--main-red, #DD2242);
   color: white;
   border: none;
-  background: var(--main-red, #DD2242);
+  background: var(--main-red, #dd2242);
   color: white;
 }
 .sec-3 .blogdiv .infodiv input:hover {
