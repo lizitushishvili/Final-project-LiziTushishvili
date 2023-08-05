@@ -1,29 +1,52 @@
 .sec-5{
-    height: 100vh;
+    height: 800px;
+    @media(max-width:850px){
+        height: 1000px;
+    }
+    @media(max-width:440px){
+        height: 1300px;
+    }
     width: 100%;
     background-color: #DCE8F2;
-    
-    h1{
-        color: #010A20;
-        font-family: 'DM Sans' sans-serif;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
-    }
     .forpositiondiv{
         padding-top: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        @media(max-width:440px){
+            height: 1200px;
+        }
+        h1{
+            color: #010A20;
+            font-family: 'DM Sans' sans-serif;
+            font-size: 60px;
+            @media(max-width:440px){
+                font-size: 40px;
+            }
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+        }
         .foronerow{
             display: flex;
             flex-direction: row;
+            @media(max-width:850px){
+                flex-direction:column;
+            }
             max-width: 800px;
             width: 100%;
+            @media(max-width:850px){
+                width: 90%;
+            }
             justify-content: space-between;
             margin-top: 40px;
+            @media(max-width:850px){
+                margin-top: 60px;
+            }
+            @media(max-width:440px){
+                height: 200px;
+            }
             .circlediv{
                 display: flex;
                 align-items: center;
@@ -33,6 +56,10 @@
                 background-color: #DD2242;
                 color: white;
                 border-radius: 50%;
+                @media(max-width:850px){
+                    margin-left: 60px;
+                    margin-bottom: 20px;
+                }
             }
             .infodiv{
                 display: flex;

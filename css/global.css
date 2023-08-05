@@ -93,6 +93,24 @@ header .navdiv {
           justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 800px) {
+  header .navdiv {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+header .navdiv .iconsdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 800px) {
+  header .navdiv .iconsdiv {
+    max-width: 400px;
+    width: 100%;
+  }
+}
 header .navdiv ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +121,11 @@ header .navdiv ul {
   max-width: 600px;
   width: 100%;
   gap: 45px;
+}
+@media (max-width: 800px) {
+  header .navdiv ul {
+    display: none;
+  }
 }
 header .navdiv ul a {
   color: white;
@@ -125,6 +148,11 @@ header .iconsdiv {
 header .iconsdiv .fa-bars {
   display: none;
 }
+@media (max-width: 800px) {
+  header .iconsdiv .fa-bars {
+    display: inline-block;
+  }
+}
 
 .sec-1 {
   display: -webkit-box;
@@ -135,11 +163,21 @@ header .iconsdiv .fa-bars {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 110vh;
+  height: 90vh;
   background-image: url("../images/forsec-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 850px) {
+  .sec-1 {
+    height: 1050px;
+  }
+}
+@media (max-width: 460px) {
+  .sec-1 {
+    height: 1300px;
+  }
 }
 .sec-1 .maindiv {
   display: -webkit-box;
@@ -155,11 +193,26 @@ header .iconsdiv .fa-bars {
   margin-left: 8%;
   margin-top: 4%;
 }
+@media (max-width: 655px) {
+  .sec-1 .maindiv {
+    width: 80%;
+  }
+}
 .sec-1 .maindiv h1 {
   font-style: "Roboto" sans-serif;
   font-size: 120px;
   font-weight: 900;
   color: white;
+}
+@media (max-width: 700px) {
+  .sec-1 .maindiv h1 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 460px) {
+  .sec-1 .maindiv h1 {
+    font-size: 70px;
+  }
 }
 .sec-1 .maindiv input {
   max-width: 250px;
@@ -171,6 +224,11 @@ header .iconsdiv .fa-bars {
   border: none;
   background: var(--main-red, #dd2242);
   color: white;
+}
+@media (max-width: 700px) {
+  .sec-1 .maindiv input {
+    margin-top: 50px;
+  }
 }
 .sec-1 .maindiv input:hover {
   background-color: #ad233a;
@@ -203,6 +261,14 @@ header .iconsdiv .fa-bars {
           flex-direction: row;
   opacity: 0.6000000238;
   background: #000;
+}
+@media (max-width: 460px) {
+  .sec-1 .videodiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .sec-1 .videodiv .vidinfodiv {
   border: 1px solid #000;
@@ -245,11 +311,16 @@ header .iconsdiv .fa-bars {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 770px;
+  height: 100vh;
   background-image: url("../images/sec-2photo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 1100px) {
+  .sec-2 {
+    height: 1150px;
+  }
 }
 .sec-2 .blogdiv {
   display: -webkit-box;
@@ -262,8 +333,34 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
   max-width: 1000px;
   width: 100%;
+}
+@media (max-width: 1100px) {
+  .sec-2 .blogdiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .sec-2 .blogdiv {
+    width: 42%;
+  }
+}
+@media (max-width: 900px) {
+  .sec-2 .blogdiv {
+    width: 60%;
+  }
+}
+@media (max-width: 565px) {
+  .sec-2 .blogdiv {
+    width: 80%;
+  }
 }
 .sec-2 .blogdiv .photodiv {
   max-width: 400px;
@@ -271,6 +368,26 @@ header .iconsdiv .fa-bars {
   height: 500px;
   border-radius: 10px;
   vertical-align: middle;
+}
+@media (max-width: 1100px) {
+  .sec-2 .blogdiv .photodiv {
+    max-width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .sec-2 .blogdiv .photodiv {
+    height: 350px;
+  }
+}
+.sec-2 .blogdiv .photodiv img {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+@media (max-width: 425px) {
+  .sec-2 .blogdiv .photodiv img {
+    height: 350px;
+  }
 }
 .sec-2 .blogdiv .infodiv {
   display: -webkit-box;
@@ -287,6 +404,19 @@ header .iconsdiv .fa-bars {
   max-width: 400px;
   width: 100%;
   vertical-align: middle;
+}
+@media (max-width: 1100px) {
+  .sec-2 .blogdiv .infodiv {
+    max-width: 600px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 341px) {
+  .sec-2 .blogdiv .infodiv {
+    height: 550px;
+  }
 }
 .sec-2 .blogdiv .infodiv h1 {
   color: var(--white, #FFF);
@@ -318,6 +448,11 @@ header .iconsdiv .fa-bars {
   background: var(--main-red, #DD2242);
   color: white;
 }
+@media (max-width: 1100px) {
+  .sec-2 .blogdiv .infodiv input {
+    max-width: 500px;
+  }
+}
 .sec-2 .blogdiv .infodiv input:hover {
   background-color: #ad233a;
 }
@@ -332,16 +467,26 @@ header .iconsdiv .fa-bars {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 770px;
+  height: 100vh;
   background-image: url("../images/backgroundsec-3_deblurred (1).jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 1178px) {
+  .sec-3 {
+    height: 1100px;
+  }
+}
 .sec-3 .container {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
+}
+@media (max-width: 660px) {
+  .sec-3 .container {
+    width: 80%;
+  }
 }
 .sec-3 .blogdiv {
   display: -webkit-box;
@@ -351,14 +496,13 @@ header .iconsdiv .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px;
+  gap: 60px;
 }
-@media (max-width: 1166px) {
+@media (max-width: 1176px) {
   .sec-3 .blogdiv {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -371,10 +515,30 @@ header .iconsdiv .fa-bars {
   height: 400px;
   vertical-align: middle;
 }
+@media (max-width: 660px) {
+  .sec-3 .blogdiv .photodiv {
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .sec-3 .blogdiv .photodiv {
+    height: 200px;
+  }
+}
 .sec-3 .blogdiv .photodiv img {
   width: 100%;
   height: 450px;
   border-radius: 10px;
+}
+@media (max-width: 660px) {
+  .sec-3 .blogdiv .photodiv img {
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .sec-3 .blogdiv .photodiv img {
+    height: 200px;
+  }
 }
 .sec-3 .blogdiv .infodiv {
   display: -webkit-box;
@@ -391,6 +555,16 @@ header .iconsdiv .fa-bars {
   max-width: 400px;
   width: 100%;
   vertical-align: middle;
+}
+@media (max-width: 1176px) {
+  .sec-3 .blogdiv .infodiv {
+    max-width: 600px;
+  }
+}
+@media (max-width: 400px) {
+  .sec-3 .blogdiv .infodiv {
+    height: 550px;
+  }
 }
 .sec-3 .blogdiv .infodiv h1 {
   color: var(--white, #fff);
@@ -422,6 +596,11 @@ header .iconsdiv .fa-bars {
   background: var(--main-red, #dd2242);
   color: white;
 }
+@media (max-width: 1176px) {
+  .sec-3 .blogdiv .infodiv input {
+    max-width: 600px;
+  }
+}
 .sec-3 .blogdiv .infodiv input:hover {
   background-color: #ad233a;
 }
@@ -440,6 +619,16 @@ header .iconsdiv .fa-bars {
           justify-content: center;
   background-color: black;
 }
+@media (max-width: 760px) {
+  .sec-4 {
+    height: 700px;
+  }
+}
+@media (max-width: 480px) {
+  .sec-4 {
+    height: 800px;
+  }
+}
 .sec-4 .divclass {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,6 +639,11 @@ header .iconsdiv .fa-bars {
           flex-direction: column;
   max-width: 1000px;
   width: 100%;
+}
+@media (max-width: 1065px) {
+  .sec-4 .divclass {
+    width: 90%;
+  }
 }
 .sec-4 .divclass .introdiv {
   display: -webkit-box;
@@ -498,10 +692,18 @@ header .iconsdiv .fa-bars {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 70px;
   max-width: 1000px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .sec-4 .divclass .numberclass {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .sec-4 .divclass .numberclass .numberdiv {
   display: -webkit-box;
@@ -536,17 +738,19 @@ header .iconsdiv .fa-bars {
 }
 
 .sec-5 {
-  height: 100vh;
+  height: 800px;
   width: 100%;
   background-color: #DCE8F2;
 }
-.sec-5 h1 {
-  color: #010A20;
-  font-family: "DM Sans" sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
+@media (max-width: 850px) {
+  .sec-5 {
+    height: 1000px;
+  }
+}
+@media (max-width: 440px) {
+  .sec-5 {
+    height: 1300px;
+  }
 }
 .sec-5 .forpositiondiv {
   padding-top: 50px;
@@ -557,12 +761,30 @@ header .iconsdiv .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 440px) {
+  .sec-5 .forpositiondiv {
+    height: 1200px;
+  }
+}
+.sec-5 .forpositiondiv h1 {
+  color: #010A20;
+  font-family: "DM Sans" sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 440px) {
+  .sec-5 .forpositiondiv h1 {
+    font-size: 40px;
+  }
 }
 .sec-5 .forpositiondiv .foronerow {
   display: -webkit-box;
@@ -579,6 +801,29 @@ header .iconsdiv .fa-bars {
           justify-content: space-between;
   margin-top: 40px;
 }
+@media (max-width: 850px) {
+  .sec-5 .forpositiondiv .foronerow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 850px) {
+  .sec-5 .forpositiondiv .foronerow {
+    width: 90%;
+  }
+}
+@media (max-width: 850px) {
+  .sec-5 .forpositiondiv .foronerow {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 440px) {
+  .sec-5 .forpositiondiv .foronerow {
+    height: 200px;
+  }
+}
 .sec-5 .forpositiondiv .foronerow .circlediv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,6 +839,12 @@ header .iconsdiv .fa-bars {
   background-color: #DD2242;
   color: white;
   border-radius: 50%;
+}
+@media (max-width: 850px) {
+  .sec-5 .forpositiondiv .foronerow .circlediv {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
 }
 .sec-5 .forpositiondiv .foronerow .infodiv {
   display: -webkit-box;
@@ -631,19 +882,29 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 130px;
   background-color: var(--blue-background, #010A20);
+}
+@media (max-width: 940px) {
+  footer {
+    height: 350px;
+  }
 }
 footer .positiondiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 40px;
-  margin-left: 130px;
   max-width: 1200px;
   width: 100%;
   height: 65px;
@@ -667,6 +928,9 @@ footer .positiondiv .forrightobjects {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
   max-width: 650px;
   width: 100%;
 }
@@ -677,12 +941,22 @@ footer .positiondiv .forrightobjects .footernav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
   max-width: 400px;
   width: 100%;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 360px) {
+  footer .positiondiv .forrightobjects .footernav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 footer .positiondiv .forrightobjects .footernav a {
   color: var(--main-white, #FFF);
