@@ -16,16 +16,16 @@ body{
         .maindiv {
             display: flex;
             flex-direction: column;
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
-            @media(max-width:655px){
+            @media(max-width:755px){
                 width: 80%;
             }
             height: 65%;
             margin-left: 8%;
             margin-top: 4%;
             h1 {
-                font-style: "Roboto" sans-serif;
+                font-style: $fontfamily;
                 font-size: 120px;
                 @media(max-width:700px){
                     font-size:100px
@@ -75,7 +75,7 @@ body{
                 h1 {
                     color: white;
                     font-size: 24px;
-                    font-family: "Roboto" sans-serif;
+                    font-family: $fontfamily;
                     margin-top: 5%;
                     margin-left: 15%;
                 }
@@ -83,7 +83,7 @@ body{
                     margin-top: 25%;
                     margin-left: 25%;
                     color: #dd2242;
-                    font-family: "Roboto" sans-serif;
+                    font-family: $fontfamily;
                     font-size: 16px;
                 }
             }

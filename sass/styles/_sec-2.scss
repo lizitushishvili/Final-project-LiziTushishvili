@@ -61,10 +61,12 @@
                 height: 550px;
             }
             h1{
-                @include titlesettings
+                @include titlesettings;
+                font-style: $fontfamily;
             }
             p{
-                @include paragraphsettings
+                @include paragraphsettings;
+                font-style: $fontfamily;
             }
             input{
                 @include button;

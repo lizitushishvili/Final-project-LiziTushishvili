@@ -15,11 +15,11 @@
         justify-content: space-between;
         align-items: center;
         @media(max-width:440px){
-            height: 1200px;
+            height: 1100px;
         }
         h1{
             color: #010A20;
-            font-family: 'DM Sans' sans-serif;
+            font-family: $fontfamily;
             font-size: 60px;
             @media(max-width:440px){
                 font-size: 40px;
@@ -70,7 +70,7 @@
                 justify-content: space-between;
                 h2{
                     color: var(--blue-background, #010A20);
-                    font-family: "DM Sans" sans-serif;
+                    font-family: $fontfamily;
                     font-size: 26.409px;
                     font-style: normal;
                     font-weight: 700;
@@ -78,7 +78,7 @@
                 }
                 p{
                     color: var(--light-text, rgba(21, 20, 57, 0.40));
-                    font-family: "DM Sans" sans-serif;
+                    font-family: $fontfamily;
                     font-size: 23.475px;
                     font-style: normal;
                     font-weight: 400;
