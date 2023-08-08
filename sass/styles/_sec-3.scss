@@ -1,4 +1,4 @@
-.sec-3 {
+#sec-3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,8 +6,7 @@
     @media(max-width:1178px){
         height: 1100px;
     }
-    background-image: url("../images/backgroundsec-3_deblurred\ \(1\).jpg");
-    @include backgroundproperties;
+    background-color: black;
     .container {
         max-width: 1440px;
         width: 90%;
@@ -19,7 +18,7 @@
     .blogdiv {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 60px;
         @media (max-width: 1176px) {
@@ -67,18 +66,12 @@
                 line-height: 50px;
             }
             p {
-                color: var(--text-lighten, #e0e0e0);
-                font-family: "DM Sans" sans-serif;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px;
-                letter-spacing: 0.18px;
+                @include paragraphsettings
             }
             input {
                 @include button;
                 @media (max-width: 1176px) {
-                    max-width: 600px;
+                    max-width: 250px;
                 }
                 background: var(--main-red, #dd2242);
                 color: white;

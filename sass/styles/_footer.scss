@@ -42,6 +42,9 @@ footer{
                 a{
                     @include footertextsettings;
                 }
+                a:hover {
+                    color: #dd2242;
+                }
             }
         }
     }
